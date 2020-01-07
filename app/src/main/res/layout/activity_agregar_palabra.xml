@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondoActivity"
+    tools:context=".AgregarPalabra">
+
+
+    <TextView
+        android:id="@+id/tv_EngADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/tv_English"
+        android:textColor="@color/tvTitulos"
+        android:textSize="30sp"
+        app:fontFamily="monospace" />
+
+    <TextView
+        android:id="@+id/tv_SpaADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_EngADD"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/tv_Spanish"
+        android:textColor="@color/tvTitulos"
+        android:textSize="30sp"
+        app:fontFamily="monospace" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/tv_DefADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_SpaADD"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/tv_Definition"
+        android:textColor="@color/tvTitulos"
+        android:textSize="30sp"
+        app:fontFamily="monospace" />
+
+
+    <TextView
+        android:id="@+id/tv_HLADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_DefinitionADD"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/tv_HyperLink"
+        android:textColor="@color/tvTitulos"
+        android:textSize="30sp"
+        app:fontFamily="monospace" />
+
+    <EditText
+        android:id="@+id/tv_EnglishADD"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/tv_EngADD"
+        android:layout_toRightOf="@+id/tv_EngADD"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/tvTitulos"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/tv_SpanishADD"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_EnglishADD"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/tv_SpaADD"
+        android:layout_toRightOf="@+id/tv_SpaADD"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/tvTitulos"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/tv_DefinitionADD"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_DefADD"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/tvTitulos"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/tv_HyperLinkADD"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_HLADD"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/tvTitulos"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/Boton_Guardar"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/tv_HyperLinkADD"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_small"
+        android:onClick="BotonGuardar"
+        android:text="@string/boton_guardar"
+        android:textSize="18sp"
+        app:fontFamily="monospace" />
+
+
+</RelativeLayout>

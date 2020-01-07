@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondoActivity"
+    tools:context=".VerPalabra">
+
+
+    <TextView
+        android:id="@+id/tv_Eng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/tv_English"
+        android:textColor="@color/tvTitulos"
+        android:textSize="30sp"
+        app:fontFamily="monospace" />
+
+    <TextView
+        android:id="@+id/tv_Spa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_Eng"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/tv_Spanish"
+        android:textColor="@color/tvTitulos"
+        android:textSize="30sp"
+        app:fontFamily="monospace" />
+
+    <TextView
+        android:id="@+id/tv_English"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/tv_Eng"
+        android:layout_toRightOf="@+id/tv_Eng"
+        android:textColor="@color/tvTitulos"
+        android:textSize="30sp"
+        app:fontFamily="monospace"
+        android:text="@string/iv_Descripcion" />
+
+    <TextView
+        android:id="@+id/tv_Spanish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_English"
+        android:layout_alignParentLeft="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/tv_Spa"
+        android:layout_toRightOf="@+id/tv_Spa"
+        android:text="@string/iv_Descripcion"
+        android:textColor="@color/tvTitulos"
+        android:textSize="30sp"
+        app:fontFamily="monospace" />
+
+    <TextView
+        android:id="@+id/tv_Def"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_Spa"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/tv_Definition"
+        android:textColor="@color/tvTitulos"
+        android:textSize="30sp"
+        app:fontFamily="monospace" />
+
+    <TextView
+        android:id="@+id/tv_Definition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_Def"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/iv_Descripcion"
+        android:textColor="@color/tvTitulos"
+        android:textSize="30sp"
+        app:fontFamily="monospace" />
+
+    <TextView
+        android:id="@+id/tv_HL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_Definition"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/tv_HyperLink"
+        android:textColor="@color/tvTitulos"
+        android:textSize="30sp"
+        app:fontFamily="monospace" />
+
+    <TextView
+        android:id="@+id/tv_HyperLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_HL"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/iv_Descripcion"
+        android:textColor="@color/tvTitulos"
+        android:textSize="30sp"
+        app:fontFamily="monospace" />
+</RelativeLayout>

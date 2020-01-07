@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Glossary</string>
+    <string name="Boton">Boton</string>
+    <string name="tv_Titulo">Glossary</string>
+    <string name="iv_Descripcion">-</string>
+    <string name="tv_SplashScreen">from\nJD&amp;ED</string>
+
+    <string name="boton_Buscar">Buscar\nPalabra</string>
+
+    <string name="boton_Diccionario">Diccionario</string>
+    <string name="boton_ModDicc">Agregar\nPalabra</string>
+
+    <string name="tv_English">English:</string>
+    <string name="tv_Spanish">Spanish:</string>
+    <string name="tv_Definition">Definition:</string>
+    <string name="tv_HyperLink">HyperLink:</string>
+    <string name="boton_guardar">Guardar</string>
+
 </resources>
