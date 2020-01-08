@@ -26,6 +26,18 @@ public class MainActivity extends AppCompatActivity {
         startActivity(agregar);
     }
 
+    //Boton Buscar
+    public void BotonBuscar (View view) {
+        Intent buscar = new Intent(this, BuscarPalabra.class);
+        startActivity(buscar);
+    }
+
+    //Boton Links
+    public void BotonLinks (View view) {
+        Intent link = new Intent(this, VerLinks.class);
+        startActivity(link);
+    }
+
     //Boton volver
     public void BotonVolver (View view) {
         finish();

@@ -10,27 +10,28 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.example.glossary.Util.Helper;
+import com.example.glossary.Util.Links;
 import com.example.glossary.Util.Vocabulary;
 
 import java.util.ArrayList;
 
-public class Diccionario extends AppCompatActivity {
+public class VerLinks extends AppCompatActivity {
 
     ListView listView;
     ArrayList<String> listaInformacion_lv;
-    ArrayList<Vocabulary> listaVocabulary;
+    ArrayList<Links> listaLinks;
     Helper db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_diccionario);
+        setContentView(R.layout.activity_ver_links);
 
         db = new Helper(getApplicationContext());
 
-        listaVocabulary = db.selectAll(); // Se carga la lista con la base de datos
+        listaLinks = db.selectAllLinks(); // Se carga la lista con la base de datos
 
-        listView = (ListView)findViewById(R.id.lv_VerDicc);
+        listView = (ListView)findViewById(R.id.lv_VerLinks);
         cargarLista();
 
         ArrayAdapter adaptador = new ArrayAdapter(this, R.layout.listview_item, listaInformacion_lv);
@@ -39,9 +40,9 @@ public class Diccionario extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Vocabulary registro  = listaVocabulary.get(position);
+                Links registro  = listaLinks.get(position);
 
-                Intent intent = new Intent(Diccionario.this, VerPalabra.class);
+                Intent intent = new Intent(VerLinks.this, ViewLink.class);
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("registro", registro);
 
@@ -49,13 +50,12 @@ public class Diccionario extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
 
     private void cargarLista() {
         listaInformacion_lv = new ArrayList<String>();
-        for (int i = 0; i < listaVocabulary.size(); i++) {
-            listaInformacion_lv.add(listaVocabulary.get(i).getEnglish());
+        for (int i = 0; i < listaLinks.size(); i++) {
+            listaInformacion_lv.add(listaLinks.get(i).getTitle());
         }
     }
 

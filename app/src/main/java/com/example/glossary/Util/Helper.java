@@ -4,30 +4,19 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
+
+import com.readystatesoftware.sqliteasset.SQLiteAssetHelper;
 
 import java.util.ArrayList;
 
-public class ConexionSQLiteHelper extends SQLiteOpenHelper {
+public class Helper extends SQLiteAssetHelper {
 
-    public ConexionSQLiteHelper(Context context) {
-        super(context, Utility.DATA_BASE_NAME, null, Utility.VERSION);
+    private static final String DATABASE_NAME = "database.db";
+    private static final int DATABASE_VERSION = 1;
+
+    public Helper(Context context) {
+        super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
-
-    @Override
-    public void onCreate(SQLiteDatabase db) {
-        db.execSQL(Utility.CREAR_TABLA_VOCABULARY);
-        db.execSQL(Utility.CREAR_TABLA_LINKS);
-    }
-
-    @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP TABLE IF EXISTS " + Utility.TABLA_VOCABULARY);
-        db.execSQL("DROP TABLE IF EXISTS " + Utility.TABLA_LINKS);
-        onCreate(db);
-    }
-
-    // Funciones
 
     public ArrayList<Vocabulary> selectAll () {
         SQLiteDatabase db = getWritableDatabase();
@@ -59,5 +48,23 @@ public class ConexionSQLiteHelper extends SQLiteOpenHelper {
 
         Long idResultante = db.insert(Utility.TABLA_VOCABULARY, "null", registro);
         db.close();
+    }
+
+    public ArrayList<Links> selectAllLinks () {
+        SQLiteDatabase db = getWritableDatabase();
+        ArrayList<Links> lista;
+        lista = new ArrayList<>();
+        Links registro = null;
+        Cursor cursor = db.rawQuery("SELECT * FROM " + Utility.TABLA_LINKS,null);
+        while (cursor.moveToNext()) {
+            registro = new Links();
+            registro.setId(cursor.getString(0));
+            registro.setTitle(cursor.getString(1));
+            registro.setUrl(cursor.getString(2));
+            registro.setDescription(cursor.getString(3));
+            lista.add(registro);
+        }
+        db.close();
+        return lista;
     }
 }

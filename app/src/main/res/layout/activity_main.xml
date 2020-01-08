@@ -64,6 +64,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@drawable/button_small"
+        android:onClick="BotonBuscar"
         android:text="@string/boton_Search"
         android:textSize="18sp"
         app:fontFamily="monospace" />
@@ -76,6 +77,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@drawable/button_small"
+        android:onClick="BotonLinks"
         android:text="@string/boton_Links"
         android:textSize="18sp"
         app:fontFamily="monospace" />

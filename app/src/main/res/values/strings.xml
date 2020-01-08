@@ -15,6 +15,11 @@
     <string name="tv_Definition">Definition:</string>
     <string name="tv_HyperLink">HyperLink:</string>
 
+    <string name="tv_Title">Title:</string>
+    <string name="tv_Url">Url:</string>
+    <string name="tv_Description">Description:</string>
+
     <string name="boton_Save">Save</string>
+    <string name="boton_SearchWord">Search</string>
 
 </resources>

@@ -2,7 +2,6 @@ package com.example.glossary;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.glossary.Util.ConexionSQLiteHelper;
 import com.example.glossary.Util.Vocabulary;
 
 import android.os.Bundle;
@@ -13,8 +12,7 @@ public class VerPalabra extends AppCompatActivity {
 
     private String english, spanish, definition, hyperlink;
     private TextView tv_english, tv_spanish, tv_definition, tv_hyperlink;
-    ConexionSQLiteHelper bd;
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,8 +22,6 @@ public class VerPalabra extends AppCompatActivity {
         tv_spanish = (TextView)findViewById(R.id.tv_Spanish);
         tv_definition = (TextView)findViewById(R.id.tv_Definition);
         tv_hyperlink = (TextView)findViewById(R.id.tv_HyperLink);
-
-        bd = new ConexionSQLiteHelper(getApplicationContext());
 
         Bundle registroEnviado = getIntent().getExtras();
         Vocabulary registro = null;

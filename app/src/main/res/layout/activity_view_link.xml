@@ -5,85 +5,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/fondoActivity"
-    tools:context=".VerPalabra">
+    tools:context=".ViewLink">
 
     <TextView
-        android:id="@+id/tv_Eng"
+        android:id="@+id/tv_Tit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="80dp"
-        android:text="@string/tv_English"
-        android:textColor="@color/colorAccent"
-        android:textSize="30sp"
-        app:fontFamily="monospace" />
-
-    <TextView
-        android:id="@+id/tv_Spa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_Eng"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/tv_Spanish"
-        android:textColor="@color/colorAccent"
-        android:textSize="30sp"
-        app:fontFamily="monospace" />
-
-    <TextView
-        android:id="@+id/tv_English"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="80dp"
-        android:layout_toEndOf="@+id/tv_Eng"
-        android:layout_toRightOf="@+id/tv_Eng"
-        android:textColor="@color/tvTitulos"
-        android:textSize="30sp"
-        app:fontFamily="monospace"
-        android:text="@string/iv_Descripcion" />
-
-    <TextView
-        android:id="@+id/tv_Spanish"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_English"
-        android:layout_alignParentLeft="false"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_toEndOf="@+id/tv_Spa"
-        android:layout_toRightOf="@+id/tv_Spa"
-        android:text="@string/iv_Descripcion"
-        android:textColor="@color/tvTitulos"
-        android:textSize="30sp"
-        app:fontFamily="monospace" />
-
-    <TextView
-        android:id="@+id/tv_Def"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_Spanish"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/tv_Definition"
-        android:textColor="@color/colorAccent"
-        android:textSize="30sp"
-        app:fontFamily="monospace" />
-
-    <TextView
-        android:id="@+id/tv_Definition"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_Def"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:text="@string/tv_Title"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        app:fontFamily="monospace" />
+
+    <TextView
+        android:id="@+id/tv_Ur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/tv_Title"
+        android:layout_marginTop="20dp"
+        android:text="@string/tv_Url"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        app:fontFamily="monospace" />
+
+    <TextView
+        android:id="@+id/tv_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/tv_Tit"
         android:layout_marginTop="20dp"
         android:text="@string/iv_Descripcion"
         android:textColor="@color/tvTitulos"
@@ -91,23 +50,38 @@
         app:fontFamily="monospace" />
 
     <TextView
-        android:id="@+id/tv_HL"
+        android:id="@+id/tv_Url"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_Definition"
+        android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="20dp"
+        android:layout_below="@+id/tv_Ur"
         android:layout_marginTop="20dp"
-        android:text="@string/tv_HyperLink"
+        android:text="@string/iv_Descripcion"
+        android:textColor="@color/tvTitulos"
+        android:textSize="30sp"
+        app:fontFamily="monospace" />
+
+    <TextView
+        android:id="@+id/tv_Desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/tv_Url"
+        android:layout_marginTop="20dp"
+        android:text="@string/tv_Description"
         android:textColor="@color/colorAccent"
         android:textSize="30sp"
         app:fontFamily="monospace" />
 
     <TextView
-        android:id="@+id/tv_HyperLink"
+        android:id="@+id/tv_Description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_HL"
+        android:layout_below="@+id/tv_Desc"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="20dp"
@@ -118,7 +92,7 @@
         app:fontFamily="monospace" />
 
     <ImageButton
-        android:id="@+id/BotonVolverVer"
+        android:id="@+id/BotonVolverViewLink"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentStart="true"
