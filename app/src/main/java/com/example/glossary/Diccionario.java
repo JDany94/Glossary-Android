@@ -58,4 +58,9 @@ public class Diccionario extends AppCompatActivity {
             listaInformacion_lv.add(listaVocabulary.get(i).getEnglish());
         }
     }
+
+    //Boton volver
+    public void BotonVolver (View view) {
+        finish();
+    }
 }

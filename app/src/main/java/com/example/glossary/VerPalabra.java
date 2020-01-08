@@ -6,6 +6,7 @@ import com.example.glossary.Util.ConexionSQLiteHelper;
 import com.example.glossary.Util.Vocabulary;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class VerPalabra extends AppCompatActivity {
@@ -31,6 +32,11 @@ public class VerPalabra extends AppCompatActivity {
 
         registro = (Vocabulary) registroEnviado.getSerializable("registro");
 
+        tv_english.setText("-");
+        tv_spanish.setText("-");
+        tv_definition.setText("-");
+        tv_hyperlink.setText("-");
+
         english = registro.getEnglish();
         spanish = registro.getSpanish();
         definition = registro.getDefinition();
@@ -40,5 +46,10 @@ public class VerPalabra extends AppCompatActivity {
         tv_spanish.setText(spanish);
         tv_definition.setText(definition);
         tv_hyperlink.setText(hyperlink);
+    }
+
+    //Boton volver
+    public void BotonVolver (View view) {
+        finish();
     }
 }

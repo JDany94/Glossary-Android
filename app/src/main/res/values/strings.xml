@@ -5,15 +5,16 @@
     <string name="iv_Descripcion">-</string>
     <string name="tv_SplashScreen">from\nJD&amp;ED</string>
 
-    <string name="boton_Buscar">Buscar\nPalabra</string>
-
-    <string name="boton_Diccionario">Diccionario</string>
-    <string name="boton_ModDicc">Agregar\nPalabra</string>
+    <string name="boton_Vocabulary">Vocabulary</string>
+    <string name="boton_Add">Add Words</string>
+    <string name="boton_Search">Search Word</string>
+    <string name="boton_Links">Links of\nInterest</string>
 
     <string name="tv_English">English:</string>
     <string name="tv_Spanish">Spanish:</string>
     <string name="tv_Definition">Definition:</string>
     <string name="tv_HyperLink">HyperLink:</string>
-    <string name="boton_guardar">Guardar</string>
+
+    <string name="boton_Save">Save</string>
 
 </resources>

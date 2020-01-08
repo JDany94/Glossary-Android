@@ -30,4 +30,17 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
+    <TextView
+        android:id="@+id/tv_TituloSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_SplashScreen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:scrollbarSize="4dp"
+        android:text="@string/tv_Titulo"
+        android:textColor="@color/tvTitulos"
+        android:textSize="34sp"
+        app:fontFamily="monospace" />
+
 </RelativeLayout>

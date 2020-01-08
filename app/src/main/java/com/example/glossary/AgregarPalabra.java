@@ -40,12 +40,19 @@ public class AgregarPalabra extends AppCompatActivity {
 
     //Boton para guardar
     public void BotonGuardar (View view) {
-        if (tv_english.getText().equals("") && tv_spanish.getText().equals("")) {
+        String english = tv_english.getText().toString();
+        String spanish = tv_spanish.getText().toString();
+        if (english.equals("") || spanish.equals("")) {
             Toast.makeText(this, "Falta llenar algunos campos..", Toast.LENGTH_SHORT).show();
         } else {
             bd.insertarPalabra(tv_english.getText().toString(), tv_spanish.getText().toString(), tv_definition.getText().toString(), tv_hyperlink.getText().toString());
             Toast.makeText(this, "Palabra Guardada", Toast.LENGTH_SHORT).show();
             finish();
         }
+    }
+
+    //Boton volver
+    public void BotonVolver (View view) {
+        finish();
     }
 }

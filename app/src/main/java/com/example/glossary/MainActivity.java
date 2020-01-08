@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main); 
+        setContentView(R.layout.activity_main);
     }
 
     //Boton Diccionario
@@ -24,5 +24,10 @@ public class MainActivity extends AppCompatActivity {
     public void BotonAgregar (View view) {
         Intent agregar = new Intent(this, AgregarPalabra.class);
         startActivity(agregar);
+    }
+
+    //Boton volver
+    public void BotonVolver (View view) {
+        finish();
     }
 }
