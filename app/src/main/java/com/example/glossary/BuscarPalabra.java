@@ -39,7 +39,7 @@ public class BuscarPalabra extends AppCompatActivity {
         spanish = tv_spanish.getText().toString();
 
         for (int i = 0; i < listaVocabulary.size(); i++) {
-            if (english.equals(listaVocabulary.get(i).getEnglish())) {
+            if (english.equalsIgnoreCase(listaVocabulary.get(i).getEnglish())) {
                 flag = true;
                 Vocabulary registro  = listaVocabulary.get(i);
                 Intent intent = new Intent(BuscarPalabra.this, VerPalabra.class);
@@ -50,7 +50,7 @@ public class BuscarPalabra extends AppCompatActivity {
             }
         }
         for (int i = 0; i < listaVocabulary.size(); i++) {
-            if (spanish.equals(listaVocabulary.get(i).getSpanish())) {
+            if (spanish.equalsIgnoreCase(listaVocabulary.get(i).getSpanish())) {
                 flag = true;
                 Vocabulary registro  = listaVocabulary.get(i);
                 Intent intent = new Intent(BuscarPalabra.this, VerPalabra.class);

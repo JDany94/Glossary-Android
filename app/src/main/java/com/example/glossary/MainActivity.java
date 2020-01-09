@@ -38,6 +38,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(link);
     }
 
+    //Boton Info
+    public void BotonInfo (View view) {
+        Intent info = new Intent(this, VerInfo.class);
+        startActivity(info);
+    }
+
     //Boton volver
     public void BotonVolver (View view) {
         finish();

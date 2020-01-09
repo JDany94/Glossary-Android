@@ -22,4 +22,11 @@
     <string name="boton_Save">Save</string>
     <string name="boton_SearchWord">Search</string>
 
+    <string name="tv_Asignat">Ing Informatica</string>
+    <string name="tv_Asignatura">Ingles Técnico</string>
+    <string name="tv_Miem">Miembros del grupo:</string>
+    <string name="tv_Miembros">José Daniel Fuentes\nElvis David Nogueiras</string>
+    <string name="tv_Ull">Universidad De La Laguna</string>
+
+
 </resources>

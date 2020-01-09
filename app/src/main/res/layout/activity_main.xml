@@ -99,4 +99,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/volver" />
 
+    <ImageButton
+        android:id="@+id/BotonInfo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/button_small"
+        android:contentDescription="@string/Boton"
+        android:onClick="BotonInfo"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/informacion" />
+
 </RelativeLayout>
